@@ -1,0 +1,29 @@
+body{
+	margin:0;
+	overflow: hidden;
+	background: #f9ffff;
+}
+.sketch{
+	position:relative;
+	left: 50%;
+	-webkit-transform: translate(-50%, 1%);
+	    -ms-transform: translate(-50%, 1%);
+	        transform: translate(-50%, 1%);
+}
+.slider{
+	position:absolute;
+}
+#controls{
+	font-family: sans-serif;
+	position:relative;
+	left: 50%;
+	-webkit-transform: translate(-50%, 1%);
+	    -ms-transform: translate(-50%, 1%);
+	        transform: translate(-50%, 1%);
+}
+
+.buttons{
+	width: 100px;
+	height: 50px;
+	font-size: 1em;
+}
