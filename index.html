@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>P5 test</title>
+<head profile="http://www.w3.org/2005/10/profile">
+	<!-- for Google -->
+    <meta name="description" content="A Langton's Ant example written with p5.js" />
+    <meta name="keywords" content="graphic, design, interaction, Langton, ant, numberphile" />
+
+    <meta name="author" content="Kenneth Lim" />
+    <meta name="copyright" content="Kenneth Lim" />
+    <meta name="application-name" content="Langton's Ant" />
+
+    <!-- for Facebook -->          
+    <meta property="og:title" content="Langton's Ant" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://designerken.be/logo.jpg" />
+    <meta property="og:description" content="I'm Ken and I'm a designer that code, what more do you want?!" />
+
+    <!-- for Twitter -->          
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Langton's Ant" />
+    <meta name="twitter:description" content="A Langton's Ant example written with p5.js" />
+    <meta name="twitter:image" content="http://designerken.be/logo.jpg" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Langton's Ant</title>
+    
+    <link rel="author" href="http://designerken.be"/>
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.95">
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/addons/p5.dom.min.js"></script>
+	<script src="smark.min.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<script src="./main.js"></script>
 
 	<div id="controls">
-		<h1>Press "Enter" to start!</h1>
+		<h1>Langton’s Ant</h1>
+		<p id="description"></p>
+		<h3>Press “Enter” or click to start!</h3>
 		<input type="button" value="Add noise" id="shuffle" class="buttons">
 		<input type="button" value="Reset" id="reset" class="buttons">
 		<p id="message"></p>

@@ -1,20 +1,15 @@
 body{
-	margin:0;
-	overflow: hidden;
 	background: #f9ffff;
 }
 .sketch{
 	position:relative;
 	left: 50%;
-	-webkit-transform: translate(-50%, 1%);
-	    -ms-transform: translate(-50%, 1%);
-	        transform: translate(-50%, 1%);
-}
-.slider{
-	position:absolute;
+	-webkit-transform: translate(-50%, 0%);
+	    -ms-transform: translate(-50%, 0%);
+	        transform: translate(-50%, 0%);
 }
 #controls{
-	font-family: sans-serif;
+	font-family: "Fira Sans", sans-serif;
 	position:relative;
 	left: 50%;
 	-webkit-transform: translate(-50%, 1%);
@@ -24,6 +19,23 @@ body{
 
 .buttons{
 	width: 100px;
-	height: 50px;
+	height: 30px;
 	font-size: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+	.sketch{
+		left: 0%;
+		-webkit-transform: translate(0%, 1%);
+		    -ms-transform: translate(0%, 1%);
+		        transform: translate(0%, 1%);
+	}
+	#controls{
+		margin: 10px;
+		max-width: 90vw;
+		left: 0%;
+		-webkit-transform: translate(0%, 1%);
+		    -ms-transform: translate(0%, 1%);
+		        transform: translate(0%, 1%);
+	}
 }
