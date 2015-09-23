@@ -119,16 +119,16 @@ function draw(){
 		noLoop();
 		$("#message").text("Out of bounds!");
 	}
+	
+	$(".sketch").click(function(){
+		loop();
+	});
 }
 
 function keyPressed(){
 	if (keyCode === ENTER){
 		loop();
 	}
-}
-
-function mouseClicked(){
-	loop();
 }
 
 $(document).ready(function() {
